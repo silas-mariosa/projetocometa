@@ -1,0 +1,60 @@
+.Header {
+    background-color: #10477F;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;  
+}
+
+.image{
+    height: 100px;
+
+}
+
+.li{
+    display: flex;
+}
+
+.texto{
+    color: #FFF;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.texto:hover{
+    color: #F7D400;
+}
+
+.p_Bandeira{
+    
+    cursor: pointer;
+}
+
+.bandeira{
+    max-width: 40%;
+}
+
+.liSociais{
+    
+    
+}
+
+.fundoSociais{
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+.imgSociais{
+    max-width: 28px;
+}
+
+.divSociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2rem;
+}

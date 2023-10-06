@@ -1,0 +1,302 @@
+// Route Live searcher
+$(function(){
+    $("#search_result").hide();
+    $('#routedeparture').keyup(function(){
+        var search_dep = $('#routedeparture').val();
+        var search_arr = $('#routearrival').val();
+        if (search_dep.length==0 && search_arr.length==0)
+        {
+            $("#no_search_result").show(1000);
+            $("#search_result").hide(1000);
+        }
+        else
+        {
+            $("#no_search_result").hide(1000);
+            $("#search_result").show(1000);
+            $.post("ajax/searcher.php",{"search_dep":search_dep,"search_arr":search_arr},function(data){
+                $('.entry').html(data); });
+        }
+    });
+});
+$(function(){
+    $('#routearrival').keyup(function(){
+        var search_dep = $('#routedeparture').val();
+        var search_arr = $('#routearrival').val();
+        if (search_dep.length==0 && search_arr.length==0)
+        {
+            $("#no_search_result").show(1000);
+            $("#search_result").hide(1000);
+        }
+        else
+        {
+            $("#no_search_result").hide(1000);
+            $("#search_result").show(1000);
+            $.post("ajax/searcher.php",{"search_dep":search_dep,"search_arr":search_arr},function(data){
+                $('.entry').html(data); });
+        }
+    });
+});
+// front end js script begin
+// datatables begin
+$(document).ready(function(){
+
+    $('#hangar').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            },
+            columnDefs: [
+                { targets: 5, type: 'numeric' },
+
+            ],
+            "order": []
+        }
+    );
+
+
+    $('#registro').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            },
+            columnDefs: [
+                { targets: 5, type: 'numeric' },
+
+            ],
+            "order": []
+        }
+    );
+    $('#vamacars').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#mevents').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#evento').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#encerrados').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            },
+            "iDisplayLength": 5,
+            columnDefs: [
+                { targets: 5, type: 'numeric' },
+
+            ],
+            "order": []
+
+        }
+    );
+    $('#ativos').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#fleet_public').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#fse_fbo').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#fse_fleet').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#fse_services').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#frotapublica').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#pilot_flights').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            },
+            columnDefs: [
+                { targets: 5, type: 'numeric' },
+
+            ],
+            "order": []
+        }
+    );
+    $('#pilots_public').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#pilots_public_en').DataTable();
+    $('#fleet_public_en').DataTable();
+    $('#routes_public').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+
+        }
+    );
+    $('#tours').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#ranks').DataTable({
+        "order": []
+    });
+    $('#pilots_flights_per_month').DataTable();
+    $('#pilots_hours_per_month').DataTable();
+    $('#hub_pilot').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#hub_fleet').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#hub_routes').dataTable( {
+        "searching": false
+    } );
+    $('#mails').DataTable();
+    $('#route_select_one').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#route_select_two').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#my_bank').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            },
+            "order": []
+        }
+    );
+
+    $('#report_plane_out').DataTable();
+    $('#validate_flights').DataTable();
+    $('#validate_jumps').DataTable();
+    $('#tour_active').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#tour_inactive').DataTable(
+        {
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+            }
+        }
+    );
+    $('#report_pilot').DataTable({
+        "order": []
+    });
+});
+
+// validations end
+// Live flight map begin
+var semaforo=1;
+function refreshflightsdiv()
+{
+    $.ajax({
+        url: '/web/get_live_flights.php',
+        data: "",
+        dataType: 'json',
+        success: function(data, textStatus, jqXHR) {
+            drawTable(data);
+        }
+    });
+};
+function drawTable(data) {
+    $("#live_flights_table").find("tr:gt(0)").remove();
+    for (var i = 0; i < data.length; i++) {
+        drawRow(data[i]);
+    }
+}
+function drawRow(rowData) {
+    var image_arr=' <IMG src="/web/assets/images/icons/ic_flight_land_black_18dp_2x.png" WIDTH="20" HEIGHT="20" BORDER=0 ALT="">&nbsp;<IMG src="/web/assets/images/country-flags/' + rowData.arr_country + '.png" WIDTH="25" HEIGHT="20" BORDER=0 ALT="">&nbsp;';
+    var image_dep=' <IMG src="/web/assets/images/icons/ic_flight_takeoff_black_18dp_2x.png" WIDTH="20" HEIGHT="20" BORDER=0 ALT="">&nbsp;<IMG src="/web/assets/images/country-flags/' + rowData.dep_country + '.png" WIDTH="25" HEIGHT="20" BORDER=0 ALT="">&nbsp;';
+    var name_dep = '<br><font size="1">'+rowData.dep_name.replace('Airport', '') +'</font>';
+    var name_arr = '<br><font size="1">'+rowData.arr_name.replace('Airport', '') +'</font>';
+    var progress = '<div class="progress"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="'+ rowData.perc_completed+'" aria-valuemin="0" aria-valuemax="100" style="width:'+ rowData.perc_completed +'%">'
+        + rowData.perc_completed +'% </div></div>';
+
+    var row = $("<tr/>")
+    $("#live_flights_table").append(row);
+    row.append($("<td>" + rowData.callsign + "</td>"));
+    row.append($("<td>" + rowData.name_pilot + " " + rowData.surname.charAt(0) + "." + "</td>"));
+    row.append($("<td>" + image_dep + rowData.departure /*+ name_dep */+"</td>"));
+    row.append($("<td>" + image_arr + rowData.arrival /*+ name_arr*/ +"</td>"));
+    row.append($("<td>" + rowData.flight_status + "</td>"));
+    row.append($("<td>" + rowData.plane_type + "</td>"));
+    row.append($("<td>" + progress + "</td>"));
+    row.append($("<td>" + rowData.pending_nm + "</td>"));
+}
+$( document ).ready(refreshflights);
+var contador=0;
+function refreshflights(){
+    refreshflightsdiv();
+    setInterval(function () {$.ajax({
+        url: '/web/get_live_flights.php',
+        data: "",
+        dataType: 'json',
+        success: function(data, textStatus, jqXHR) {
+            drawTable(data);
+        }
+    })}, 120000);
+}
+// Live flight end
