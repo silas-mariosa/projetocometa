@@ -1,5 +1,7 @@
 .Header {
     background-color: #10477F;
+    position: relative;
+    z-index: 99;
 }
 
 .div{

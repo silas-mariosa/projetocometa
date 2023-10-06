@@ -1,0 +1,28 @@
+.imagem{
+    max-width: 100%;
+}
+
+.div{
+    position: relative;
+    z-index: 98;
+}
+
+.p{
+    position: absolute;
+    bottom: 25%;
+    left: 12%;
+    font-size: 60px;
+    color: #F7D400;
+}
+.btn{
+    position: absolute;
+    right: 20%;
+    bottom: 15%;
+    color: #10477F;
+    background-color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 30px;
+    border: 4px solid #10477F;
+    cursor: pointer;
+}
