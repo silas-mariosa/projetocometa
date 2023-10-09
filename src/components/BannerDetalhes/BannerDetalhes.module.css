@@ -1,0 +1,16 @@
+.div{
+    display: flex;
+    flex-basis: 25%;
+    padding: 0 4%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerPai{
+    background-color: #F6F1E4;
+    padding: 3% 18%;
+}
