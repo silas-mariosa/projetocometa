@@ -4,6 +4,9 @@ import image from "../../img/Microsoft_Flight_Simulator_Screenshot_2023.06.22_-_
 import styles from "./HomePage.module.css";
 import BannerDetalhes from "components/BannerDetalhes/BannerDetalhes.js";
 import BannerVoeCometa from "components/BannerVoeCometa/BannerVoeCometa.js";
+import Expedicao from "components/Expedicao/Expedicao.js";
+import BannerBottom from "components/BannerBottom/BannerBottom.js";
+import BannerEstatisticas from "components/BannerEstatisticas/BannerEstatisticas.js";
 
 export default function HomePage() {
   return (
@@ -18,6 +21,9 @@ export default function HomePage() {
       <BannerMid></BannerMid>
       <BannerDetalhes></BannerDetalhes>
       <BannerVoeCometa></BannerVoeCometa>
+      <Expedicao></Expedicao>
+      <BannerBottom></BannerBottom>
+      <BannerEstatisticas></BannerEstatisticas>
     </div>
     </section>
   );

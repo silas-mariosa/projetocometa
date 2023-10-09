@@ -1,0 +1,37 @@
+.overlayContainer {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .backgroundImage {
+    max-width: 100%;
+    height: auto; /* Ensure the image scales proportionally */
+  }
+  
+  .textoUpper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to make text more readable */
+    color: white; /* Text color */
+  }
+  
+  .texto{
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 0 5%;
+  }
+  .nome{
+    margin: 0;
+  }
+  .numero{
+    margin: .5% 0;
+  }

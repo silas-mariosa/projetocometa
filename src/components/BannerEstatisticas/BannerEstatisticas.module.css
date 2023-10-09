@@ -1,0 +1,26 @@
+.container{
+    background-color: #F6F1E4;
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 1px solid #10477F;
+    flex-basis: 22%;
+    padding: 2% 0 1% 0;
+}
+.numero{
+    font-size: 50px;
+    margin: 0;
+    color: #10477F;
+}
+
+.titulo{
+    font-size: 18px;
+    margin: 6% 0 0 0;
+    color: #10477F;
+}
