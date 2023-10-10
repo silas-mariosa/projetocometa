@@ -1,6 +1,9 @@
 export default function Assinatura() {
   return (
-    <div style={{color:'#FFF'}}>
+    <div style={{color:'#FFF', backgroundColor:'#062b52', padding:'2% 25%'}}>
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+      <div>
+
       Copyrights © 2023 | Cometa Virtual Airlines. Desenvolvido por{" "}
       <a
         href="http://silasmariosa.com.br"
@@ -9,6 +12,13 @@ export default function Assinatura() {
       >
         Silas Mariosa.
       </a>
+      </div>
+      <div>
+      <a href="#" style={{color:'#FFF', textDecoration:'none'}}>Aviso de Privacidade (LGPD)</a>
+
+      </div>
+
+      </div>
     </div>
   );
 }

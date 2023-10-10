@@ -6,14 +6,7 @@ import youtube from "../../img/youtube.png";
 
 export default function IconesSocial(){
     return(
-        <div className={styles.divSociais}>
-            <p className={styles.fundoSociais}>
-              <img
-                alt="redes sociais"
-                className={styles.imgSociais}
-                src={facebook}
-              ></img>
-            </p>
+        <div className={styles.divSociais}>            
             <p className={styles.fundoSociais}>
               <img
                 alt="redes sociais"

@@ -40,3 +40,9 @@
     background-color: #FFF;
     border: 1px solid #10477F;
 }
+
+.btn:hover{
+    transition: 0.5s;
+    color:#FFF;
+    background-color: #10477F;
+}

@@ -2,6 +2,7 @@ import styles from './BannerTopo.module.css';
 import foto from '../../img/INSCREVA-SE.png';
 import icone from '../../img/inscrevaseIcon.png'
 
+
 export default function BannerTopo(){
     return(      
         <section className={styles.section}>

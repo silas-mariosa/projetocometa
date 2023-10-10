@@ -14,10 +14,24 @@
     font-size: 60px;
     color: #F7D400;
 }
+.p1{
+    position: absolute;
+    bottom: 20%;
+    right: 12%;
+    font-size: 60px;
+    color: #F7D400;
+}
+.p2{
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    font-size: 60px;
+    color: #F7D400;
+}
 .botao{
     position: absolute;
     right: 20%;
-    bottom: 15%;
+    bottom: 20%;
     color: #10477F;
     background-color: #fff;
     padding: .5rem 1.5rem;
