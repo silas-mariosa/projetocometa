@@ -4,7 +4,10 @@ import reportWebVitals from "./reportWebVitals";
 import { createGlobalStyle } from "styled-components";
 import Header from "./components/Header/Header.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Rotas/HomePage/HomePage.js';
+import Home from './rotas/HomePage/HomePage.js';
+import SobreNos from "rotas/SobreNos/SobreNos";
+import Rodape from "components/Rodape/Rodape.js";
+import Assinatura from "components/Assinatura/Assinatura.js";
 
 const GlobalStyled = createGlobalStyle`
   body {
@@ -34,7 +37,10 @@ root.render(
       <Header/>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/sobrenos" element={<SobreNos />}/>
       </Routes>
+      <Rodape/>
+        <Assinatura/>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,0 +1,23 @@
+.div{
+    background-color: #10477F;
+    display: block;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1% 20%;
+}
+.h2{
+    margin: 0;
+    padding-bottom: 2%;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+.texto{
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 1%;
+}

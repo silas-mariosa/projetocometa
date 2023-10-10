@@ -9,8 +9,6 @@ import BannerVoeCometa from "components/BannerVoeCometa/BannerVoeCometa.js";
 import Expedicao from "components/Expedicao/Expedicao.js";
 import BannerBottom from "components/BannerBottom/BannerBottom.js";
 import BannerEstatisticas from "components/BannerEstatisticas/BannerEstatisticas.js";
-import Rodape from "components/Rodape/Rodape.js";
-import Assinatura from "components/Assinatura/Assinatura.js";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -25,7 +23,8 @@ export default function HomePage() {
           showArrows={false}
           showThumbs={false}
           easing="ease-in-out"
-          transitionTime={1000}
+          transitionTime={1000}          
+          showStatus={false}
         >
           <div className={styles.div}>
             <p className={styles.p}>Aqui Seus Sonhos Voam Alto</p>
@@ -53,9 +52,7 @@ export default function HomePage() {
         <BannerVoeCometa></BannerVoeCometa>
         <Expedicao></Expedicao>
         <BannerBottom></BannerBottom>
-        <BannerEstatisticas></BannerEstatisticas>
-        <Rodape></Rodape>
-        <Assinatura></Assinatura>
+        <BannerEstatisticas></BannerEstatisticas>        
       </div>
     </section>
   );

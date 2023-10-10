@@ -1,76 +1,115 @@
 .Header {
-    background-color: #10477F;
-    position: fixed;
-    left: 0;
+  background-color: #10477f;
+  position: fixed;
+  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0);
   transition: background-color 0.3s ease;
 }
 .Header.scrolled {
-    background-color: rgba(16, 71, 127, 1); /* Fundo escurecido quando o usuário rolar */
-    color: #fff; /* Cor de texto quando o Header estiver escuro */
-  }
-
-  .Header.scrolled .image{
-    opacity: 1;
-  }
-
-.div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;  
+  background-color: rgba(
+    16,
+    71,
+    127,
+    1
+  ); /* Fundo escurecido quando o usuário rolar */
+  color: #fff; /* Cor de texto quando o Header estiver escuro */
 }
 
-.image{
-    height: 100px;
-    opacity: .1;
-    transition: opacity 0.3s ease;
-
+.Header.scrolled .image {
+  opacity: 1;
 }
 
-.li{
-    display: flex;
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
-.texto{
-    color: #FFF;
-    margin-right: 1rem;
-    cursor: pointer;
+.image {
+  height: 100px;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
 }
 
-.texto:hover{
-    color: #F7D400;
+.li {
+  display: flex;
 }
 
-.p_Bandeira{
-    
-    cursor: pointer;
+.texto {
+  color: #fff;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.bandeira{
-    max-width: 40%;
+.texto:hover {
+  color: #f7d400;
 }
 
-.liSociais{
-    
-    
+.p_Bandeira {
+  cursor: pointer;
 }
 
-.fundoSociais{
-    padding-right: 0.5rem;
-    cursor: pointer;
+.bandeira {
+  max-width: 40%;
 }
 
-.imgSociais{
-    max-width: 28px;
+.liSociais {
 }
 
-.divSociais{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: 2rem;
+.fundoSociais {
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.imgSociais {
+  max-width: 28px;
+}
+
+.divSociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.submenuItem {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: left;
+  white-space: nowrap;
+  padding: 1rem 2rem 0.5rem 1rem;
+  font-size: 14px;
+}
+
+.submenuItem:hover {
+transition: .2s;
+  color: #f7d400;
+  background-color: #F6F1E4;
+}
+
+.submenu.open {
+  display: block;
+}
+
+.submenuWrapper {
+  position: relative;
+}
+
+.submenuWrapper:hover .submenu {
+  display: block;
 }

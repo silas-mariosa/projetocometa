@@ -14,7 +14,7 @@ export default function Assinatura() {
       </a>
       </div>
       <div>
-      <a href="#" style={{color:'#FFF', textDecoration:'none'}}>Aviso de Privacidade (LGPD)</a>
+      <a href="#" style={{color:'#FFF', textDecoration:'none', borderBottom:'1px dashed #FFF'}}>Aviso de Privacidade (LGPD)</a>
 
       </div>
 
