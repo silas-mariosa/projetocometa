@@ -7,6 +7,8 @@ import BannerVoeCometa from "components/BannerVoeCometa/BannerVoeCometa.js";
 import Expedicao from "components/Expedicao/Expedicao.js";
 import BannerBottom from "components/BannerBottom/BannerBottom.js";
 import BannerEstatisticas from "components/BannerEstatisticas/BannerEstatisticas.js";
+import Rodape from "components/Rodape/Rodape.js";
+import Assinatura from "components/Assinatura/Assinatura.js";
 
 export default function HomePage() {
   return (
@@ -24,6 +26,8 @@ export default function HomePage() {
       <Expedicao></Expedicao>
       <BannerBottom></BannerBottom>
       <BannerEstatisticas></BannerEstatisticas>
+      <Rodape></Rodape>
+      <Assinatura></Assinatura>
     </div>
     </section>
   );

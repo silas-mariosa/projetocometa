@@ -1,0 +1,16 @@
+.fundoSociais{
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+.imgSociais{
+    max-width: 28px;
+}
+
+.divSociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2rem;
+}
