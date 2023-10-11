@@ -8,6 +8,8 @@ import Home from './rotas/HomePage/HomePage.js';
 import SobreNos from "rotas/SobreNos/SobreNos";
 import Rodape from "components/Rodape/Rodape.js";
 import Assinatura from "components/Assinatura/Assinatura.js";
+import NossaTripulacao from "rotas/NossaTripulacao/NossaTripulacao";
+import Frota from "rotas/Frota/Frota";
 
 const GlobalStyled = createGlobalStyle`
   body {
@@ -38,6 +40,8 @@ root.render(
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/sobrenos" element={<SobreNos />}/>
+        <Route path="/tripulantes" element={<NossaTripulacao />}/>
+        <Route path="/frota" element={<Frota />}/>
       </Routes>
       <Rodape/>
         <Assinatura/>

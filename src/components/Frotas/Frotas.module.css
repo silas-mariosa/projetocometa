@@ -1,0 +1,48 @@
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.section{
+    padding: 5% 20%;
+    background-color: #F6F1E4;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo{
+    text-align: left;
+    color: #10477F;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0 0 1% 0;
+}
+
+.line{
+    background-color: #10477F;
+    height: 2px;
+}
+
+.containerBtn{
+    text-align: right;
+    margin-right: 2%;
+}
+
+.btn{
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0.375rem 1.5rem;
+    color:#10477F;
+    background-color: #FFF;
+    border: 1px solid #10477F;
+}
+
+.btn:hover{
+    transition: 0.5s;
+    color:#FFF;
+    background-color: #10477F;
+}

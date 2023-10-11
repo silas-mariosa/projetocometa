@@ -1,5 +1,4 @@
 import BannerTopoPagina from "components/BannerTopoPagina/BannerTopoPagina";
-import styles from "./SobreNos.module.css";
 import image from "../../img/sobreNos.png";
 import BannerDescricao from "components/BannerDescricao/BannerDescricao";
 import BannerMissao from "components/BannerMissao/BannerMissao";

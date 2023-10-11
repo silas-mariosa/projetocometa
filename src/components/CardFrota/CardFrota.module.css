@@ -1,0 +1,29 @@
+.div:hover{
+    opacity: 0.7;
+}
+
+.container{
+    padding: 1%;
+}
+
+.aeronave{
+    color: #F7D400;
+    font-Weight: 500;
+    text-Align: left;
+    margin: 0;
+    font-size: 20px;
+}
+.tipo{
+    color: #000;
+    font-Weight: 500;
+    text-Align: left;
+    margin: 0;
+    font-size: 14px;
+}
+.asa{
+    color: #000;
+    font-Weight: 500;
+    text-Align: left;
+    margin: 0;
+    font-size: 14px;
+}
