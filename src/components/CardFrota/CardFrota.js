@@ -1,6 +1,6 @@
 import styles from "./CardFrota.module.css";
 
-export default function CardFrota({ image, aeronave, tipo, asa, key }) {
+export default function CardFrota({ src, aeronave, tipo, asa, key }) {
   return (
     <>
       <div className={styles.container}>
@@ -15,7 +15,7 @@ export default function CardFrota({ image, aeronave, tipo, asa, key }) {
         key={key}
         >
           <img
-            src={image}
+            src={src}
             alt={aeronave}
             style={{ border: "1px solid #10477F" }}
           ></img>

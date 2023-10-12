@@ -4,12 +4,12 @@ import reportWebVitals from "./reportWebVitals";
 import { createGlobalStyle } from "styled-components";
 import Header from "./components/Header/Header.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './rotas/HomePage/HomePage.js';
-import SobreNos from "rotas/SobreNos/SobreNos";
+import Home from './Rotas/HomePage/HomePage.js';
+import SobreNos from "Rotas/SobreNos/SobreNos";
 import Rodape from "components/Rodape/Rodape.js";
 import Assinatura from "components/Assinatura/Assinatura.js";
-import NossaTripulacao from "rotas/NossaTripulacao/NossaTripulacao";
-import Frota from "rotas/Frota/Frota";
+import NossaTripulacao from "Rotas/NossaTripulacao/NossaTripulacao";
+import Frota from "Rotas/Frota/Frota";
 
 const GlobalStyled = createGlobalStyle`
   body {

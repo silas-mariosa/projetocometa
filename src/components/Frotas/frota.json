@@ -2,42 +2,42 @@
     "frota":[
         {
             "id":1,
-            "imagem": "/img/expedicaoCard.png",
+            "image": "/image/expedicaoCard.png",
             "titulo": "Airbus (A319/A320/A321)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":2,
-            "imagem": "/img/expedicaoCard.png",
+            "image": "/image/expedicaoCard.png",
             "titulo": "Airbus (A330-900)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":3,
-            "imagem": "../../img/expedicaoCard.png",
+            "image": "/image/expedicaoCard.png",
             "titulo": "ATR-72 (AT75)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":4,
-            "imagem": "../../img/expedicaoCard.png",
+            "image": "/image/expedicaoCard.png",
             "titulo": "Boeing 736-300/800/900 (B736)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":5,
-            "imagem": "../../img/expedicaoCard.png",
+            "image": "/image/expedicaoCard.png",
             "titulo": "Boeing 738-300/800/900 (B738)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":6,
-            "imagem": "../../img/expedicaoCard.png",
+            "image": "/image/expedicaoCard.png",
             "titulo": "Embraer 190 (E190)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
