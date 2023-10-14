@@ -41,6 +41,20 @@
             "titulo": "Embraer 190 (E190)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
+        },
+        {
+            "id":7,
+            "image": "/image/expedicaoCard.png",
+            "titulo": "Cessna 208 Grand Caravam",
+            "tipo": "Comercial",
+            "asa": "Asa Fixa"
+        },
+        {
+            "id":8,
+            "image": "/image/expedicaoCard.png",
+            "titulo": "Cessna Citation CJ4 (C25C)",
+            "tipo": "Comercial",
+            "asa": "Asa Fixa"
         }
     ]
 }

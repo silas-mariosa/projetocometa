@@ -31,7 +31,7 @@ export default function Rodape() {
         <div className={styles.divTres}>
           <p className={styles.balao}>NOSSA DISCORD</p>
           <iframe
-            src="https://discord.com/widget?id=488454047926452225&theme=dark"
+            src="https://discord.com/widget?id=941487557500342312&theme=dark"
             width="350"
             height="350"
             allowtransparency="true"

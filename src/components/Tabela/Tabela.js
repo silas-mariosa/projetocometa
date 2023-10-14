@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 import jsonData from "./result.json";
 
+
 const combinedNameColumn = {
   field: "combinedName",
   headerName: "Nome Completo",
@@ -78,6 +79,7 @@ export default function Tabela() {
                 color: "primary.main",
               },
               borderRadius: "10px",
+              cursor: "pointer"
             }}
             rows={rows}
             columns={columns}
@@ -90,7 +92,7 @@ export default function Tabela() {
             }}
             pageSizeOptions={[5]}
             checkboxSelection={false}
-            disableRowSelectionOnClick={false}
+            disableRowSelectionOnClick={true}
           />
         </Box>
       </div>

@@ -1,0 +1,108 @@
+{
+  "frota": [
+    {
+      "id": "1",
+      "image": "/image/A320.png",
+      "nome": "Airbus A320",
+      "Velocidade": "Mach 0.82 (cerca de 870 km/h)",
+      "Teto": "39,000 ft",
+      "Alcance": "3,300 nautical miles (cerca de 6,112 km)",
+      "Combustivel": "aproximadamente 24,210 litros",
+      "NumeroPassageiros": "Varia de 140 a 240 passageiros, dependendo da configuração",
+      "PesoMaximo": "170,000 libras (aproximadamente 77,111 kg) a 174,200 libras (aproximadamente 79,009 kg), dependendo da variante",
+      "PesoPouso": "Varia de 127,000 libras (aproximadamente 57,606 kg) a 138,100 libras (aproximadamente 62,626 kg), dependendo da variante",
+      "PesoDecolagem": "Varia de 166,000 libras (aproximadamente 75,296 kg) a 174,200 libras (aproximadamente 79,009 kg), dependendo da variante"
+    },
+    {
+      "id": "2",
+      "image": "/image/A330.png",
+      "nome": "Airbus A330",
+      "Velocidade": "Mach 0.86 (ou cerca de 913 km/h)",
+      "Teto": "43,100 ft",
+      "Alcance": "6,350 Nm (dependendo da variante)",
+      "Combustivel": "139,100 libras (aproximadamente 63.110 kg)",
+      "NumeroPassageiros": "Varia de 250 a 440 passageiros, dependendo da configuração",
+      "PesoMaximo": "550,000 libras (aproximadamente 249.476 kg)",
+      "PesoPouso": "Varia de 390,200 libras (aproximadamente 177.157 kg) a 450,000 libras (aproximadamente 204.117 kg), dependendo da variante",
+      "PesoDecolagem": "Varia de 507,000 libras (aproximadamente 230.400 kg) a 578,000 libras (aproximadamente 262.100 kg), dependendo da variante"
+    },
+    {
+      "id": "3",
+      "image": "/image/ATR72.png",
+      "nome": "ATR 72",
+      "Velocidade": "330 knots (cerca de 611 km/h)",
+      "Teto": "25,000 ft",
+      "Alcance": "1,100 nautical miles (cerca de 2,037 km)",
+      "Combustivel": "4,500 libras (aproximadamente 2,041 kg)",
+      "NumeroPassageiros": "Varia de 70 a 78 passageiros, dependendo da configuração",
+      "PesoMaximo": "48,500 libras (aproximadamente 22,000 kg)",
+      "PesoPouso": "47,600 libras (aproximadamente 21,591 kg)",
+      "PesoDecolagem": "48,500 libras (aproximadamente 22,000 kg)"
+    },
+    {
+      "id": "4",
+      "image": "/image/b737.png",
+      "nome": "Boeing 737-600 (B736)",
+      "Velocidade": "Mach 0.785 (cerca de 837 km/h)",
+      "Teto": "41,000 ft",
+      "Alcance": "3,235 nautical miles (cerca de 6,000 km)",
+      "Combustivel": "6,875 galões (aproximadamente 26,030 litros)",
+      "NumeroPassageiros": "Varia de 85 a 149 passageiros, dependendo da configuração",
+      "PesoMaximo": "144,500 libras (aproximadamente 65,500 kg)",
+      "PesoPouso": "138,000 libras (aproximadamente 62,595 kg)",
+      "PesoDecolagem": "144,500 libras (aproximadamente 65,500 kg)"
+    },
+    {
+      "id": "5",
+      "image": "/image/b737.png",
+      "nome": "Boeing 737-800 (B738)",
+      "Velocidade": "Mach 0.78 (cerca de 834 km/h)",
+      "Teto": "41,000 ft",
+      "Alcance": "3,850 nautical miles (cerca de 7,130 km)",
+      "Combustivel": "6,875 galões (aproximadamente 26,030 litros)",
+      "NumeroPassageiros": "Varia de 162 a 189 passageiros, dependendo da configuração",
+      "PesoMaximo": "174,200 libras (aproximadamente 79,009 kg)",
+      "PesoPouso": "144,500 libras (aproximadamente 65,500 kg)",
+      "PesoDecolagem": "174,200 libras (aproximadamente 79,009 kg)"
+    },
+    {
+      "id": "6",
+      "image": "/image/A320.png",
+      "nome": "Embraer E190",
+      "Velocidade": "Mach 0.82 (cerca de 882 km/h)",
+      "Teto": "41,000 ft",
+      "Alcance": "2,450 nautical miles (cerca de 4,540 km)",
+      "Combustivel": "aproximadamente 9,190 litros",
+      "NumeroPassageiros": "Varia de 94 a 114 passageiros, dependendo da configuração",
+      "PesoMaximo": "106,250 libras (aproximadamente 48,250 kg)",
+      "PesoPouso": "97,000 libras (aproximadamente 43,998 kg)",
+      "PesoDecolagem": "106,250 libras (aproximadamente 48,250 kg)"
+    },
+    {
+      "id": "7",
+      "image": "/image/GranCaravanC2008.png",
+      "nome": "Cessna 208 Grand Caravan",
+      "Velocidade": "Aproximadamente Mach 0.208 (cerca de 272 km/h)",
+      "Teto": "27,000 ft",
+      "Alcance": "1,240 nautical miles (cerca de 2,296 km)",
+      "Combustivel": "aproximadamente 330 litros",
+      "NumeroPassageiros": "Varia de 9 a 14 passageiros, dependendo da configuração",
+      "PesoMaximo": "8,750 libras (aproximadamente 3,969 kg)",
+      "PesoPouso": "8,750 libras (aproximadamente 3,969 kg)",
+      "PesoDecolagem": "8,750 libras (aproximadamente 3,969 kg)"
+    },
+    {
+      "id": "8",
+      "image": "/image/c25c.png",
+      "nome": "Cessna Citation CJ4 (C25C)",
+      "Velocidade": "Aproximadamente Mach 0.77 (cerca de 834 km/h)",
+      "Teto": "45.000 ft",
+      "Alcance": "2.165 nautical miles (cerca de 4,009 km)",
+      "Combustivel": "aproximadamente 3.717 litros",
+      "NumeroPassageiros": "Até 10 passageiros",
+      "PesoMaximo": "17.110 libras (aproximadamente 7.760 kg)",
+      "PesoPouso": "15.660 libras (aproximadamente 7.106 kg)",
+      "PesoDecolagem": "17.110 libras (aproximadamente 7,760 kg)"
+    }
+  ]
+}

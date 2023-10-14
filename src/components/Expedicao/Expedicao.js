@@ -20,7 +20,7 @@ export default function Expedicao() {
         </div>
       </div>
       <div className={styles.containerBtn}>
-        <a className={styles.btn}>Ver mais...</a>
+        <a className={styles.btn} href="/expedicoes">Ver mais...</a>
       </div>
     </section>
   );

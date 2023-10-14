@@ -1,7 +1,6 @@
 import styles from "./Frotas.module.css";
 import CardFrota from "components/CardFrota/CardFrota";
 import DadosFrota from 'components/Frotas/frota.json';
-import { Link } from 'react-router-dom';
 import React from 'react';
 
 export default function Frotas() {
