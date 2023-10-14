@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Header.module.css";
-import image from "../../img/Logo.png";
+import image from "../../img/LOGO_PNG.png";
 import bandeira from "../../img/bandeiraAmericana.png";
 import IconesSocial from "components/IconesSocial/IconesSocial";
 

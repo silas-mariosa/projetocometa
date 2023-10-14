@@ -10,6 +10,7 @@ import Rodape from "components/Rodape/Rodape.js";
 import Assinatura from "components/Assinatura/Assinatura.js";
 import NossaTripulacao from "Rotas/NossaTripulacao/NossaTripulacao";
 import Frota from "Rotas/Frota/Frota";
+import FrotaDetalhes from "Rotas/FrotaDetalhes/FrotaDetalhes.js";
 
 const GlobalStyled = createGlobalStyle`
   body {
@@ -42,6 +43,7 @@ root.render(
         <Route path="/sobrenos" element={<SobreNos />}/>
         <Route path="/tripulantes" element={<NossaTripulacao />}/>
         <Route path="/frota" element={<Frota />}/>
+        <Route path="/frota/:id" element={<FrotaDetalhes/>}/>
       </Routes>
       <Rodape/>
         <Assinatura/>

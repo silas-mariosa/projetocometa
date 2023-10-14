@@ -1,8 +1,11 @@
 import styles from "./CardFrota.module.css";
+import { Link } from 'react-router-dom';
+import React from 'react';
 
-export default function CardFrota({ src, aeronave, tipo, asa, key }) {
+export default function CardFrota({ id,src, aeronave, tipo, asa }) {
   return (
     <>
+    <Link to={`/frota/${id}`}>
       <div className={styles.container}>
         <div 
         className={styles.div}
@@ -12,7 +15,7 @@ export default function CardFrota({ src, aeronave, tipo, asa, key }) {
           padding: "1%",
           cursor: "pointer",
         }}
-        key={key}
+        key={id}
         >
           <img
             src={src}
@@ -32,6 +35,7 @@ export default function CardFrota({ src, aeronave, tipo, asa, key }) {
           </p>
         </div>
       </div>
+    </Link>
     </>
   );
 }

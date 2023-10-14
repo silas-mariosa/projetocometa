@@ -1,6 +1,7 @@
 .Header {
   background-color: #10477f;
   position: fixed;
+  border-bottom: 1px solid rgba(24, 49, 75, 0.3);
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -29,9 +30,10 @@
 }
 
 .image {
-  height: 100px;
+  max-width: 10%;
   opacity: 0.1;
   transition: opacity 0.3s ease;
+  padding: 0.5%;
 }
 
 .li {

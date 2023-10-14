@@ -1,9 +1,8 @@
 import styles from "./Frotas.module.css";
 import CardFrota from "components/CardFrota/CardFrota";
 import DadosFrota from 'components/Frotas/frota.json';
-// import image from '../../img/expedicaoCard.png';
-console.log(DadosFrota);
-
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 export default function Frotas() {
   return (
@@ -15,12 +14,9 @@ export default function Frotas() {
         </div>
         <div className={styles.containerCards}>
           {DadosFrota.frota.map(dados => (
-            <CardFrota key={dados.id} src={dados.image} aeronave={dados.titulo} tipo={dados.tipo} asa={dados.asa}></CardFrota>
+            <CardFrota key={dados.id} src={dados.image} aeronave={dados.titulo} tipo={dados.tipo} asa={dados.asa} id={dados.id}></CardFrota>
           ))}
         </div>
-      </div>
-      <div className={styles.containerBtn}>
-        <a className={styles.btn}>Ver mais...</a>
       </div>
     </section>
   );
