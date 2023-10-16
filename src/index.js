@@ -4,13 +4,16 @@ import reportWebVitals from "./reportWebVitals";
 import { createGlobalStyle } from "styled-components";
 import Header from "./components/Header/Header.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Rotas/HomePage/HomePage.js';
-import SobreNos from "Rotas/SobreNos/SobreNos";
+import Home from "./rotas/HomePage/HomePage.js";
+import SobreNos from "rotas/SobreNos/SobreNos";
 import Rodape from "components/Rodape/Rodape.js";
 import Assinatura from "components/Assinatura/Assinatura.js";
-import NossaTripulacao from "Rotas/NossaTripulacao/NossaTripulacao";
-import Frota from "Rotas/Frota/Frota";
-import FrotaDetalhes from "Rotas/FrotaDetalhes/FrotaDetalhes.js";
+import NossaTripulacao from "rotas/NossaTripulacao/NossaTripulacao";
+import Frota from "rotas/Frota/Frota";
+import FrotaDetalhes from "rotas/FrotaDetalhes/FrotaDetalhes.js";
+import DownloadPage from "rotas/DownloadPage/DownloadPage";
+import NossaExpedicao from "rotas/NossaExpedicao/NossaExpedicao";
+import { LanguageProvider } from "./LanguageContext";
 
 const GlobalStyled = createGlobalStyle`
   body {
@@ -37,16 +40,20 @@ root.render(
   <React.StrictMode>
     <GlobalStyled />
     <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/sobrenos" element={<SobreNos />}/>
-        <Route path="/tripulantes" element={<NossaTripulacao />}/>
-        <Route path="/frota" element={<Frota />}/>
-        <Route path="/frota/:id" element={<FrotaDetalhes/>}/>
-      </Routes>
-      <Rodape/>
-        <Assinatura/>
+      <LanguageProvider>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/sobrenos" element={<SobreNos />} />
+          <Route path="/tripulantes" element={<NossaTripulacao />} />
+          <Route path="/frota" element={<Frota />} />
+          <Route path="/frota/:id" element={<FrotaDetalhes />} />
+          <Route path="/expedicoes" element={<NossaExpedicao />} />
+          <Route path="/download" element={<DownloadPage />} />
+        </Routes>
+        <Rodape />
+        <Assinatura />
+      </LanguageProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

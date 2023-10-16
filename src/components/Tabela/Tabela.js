@@ -1,9 +1,9 @@
+import React from "react";
+import { useLanguage } from "../../LanguageContext";
 import styles from "./Tabela.module.css";
-import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 import jsonData from "./result.json";
-
 
 const combinedNameColumn = {
   field: "combinedName",
@@ -47,6 +47,30 @@ const columns = [
 
 export default function Tabela() {
   const [rows, setRows] = React.useState([]);
+  const { language } = useLanguage();
+
+  // Defina as traduções com base no idioma
+  const translations = {
+    "en-US": {
+      fullName: "Full Name",
+      roundedHours: "Rounded Flight Hours",
+      callsign: "Callsign",
+      rank: "Rank",
+      location: "Location",
+      numberOfFlights: "Number of Flights",
+    },
+    "pt-BR": {
+      fullName: "Nome Completo",
+      roundedHours: "Horas de Voo Arredondadas",
+      callsign: "Callsign",
+      rank: "Rank",
+      location: "Localização",
+      numberOfFlights: "Número de Voos",
+    },
+  };
+
+  // Obtenha as traduções com base no idioma atual
+  const t = translations[language];
 
   React.useEffect(() => {
     const data = jsonData.data.map((item, index) => ({
@@ -79,10 +103,13 @@ export default function Tabela() {
                 color: "primary.main",
               },
               borderRadius: "10px",
-              cursor: "pointer"
+              cursor: "pointer",
             }}
             rows={rows}
-            columns={columns}
+            columns={columns.map((col) => ({
+              ...col,
+              headerName: t[col.field],
+            }))}
             initialState={{
               pagination: {
                 paginationModel: {

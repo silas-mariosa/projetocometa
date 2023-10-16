@@ -1,0 +1,49 @@
+.container_tabela {
+    padding: 2% 15%;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f1e4;
+  }
+  .container {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border: 2px solid #10477f;
+  }
+  .tabelaContainer {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  .divTitulo {
+  }
+  .h2 {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    text-align: center;
+    background-color: #10477f;
+    margin: 0;
+    padding: 1%;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .table {
+    background-color: white;
+    padding: 1%;
+    border-collapse: collapse;
+  }
+  .tbody {
+    justify-content: center;
+    text-align: left;
+  }
+  .td {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    display: table-cell;
+  }
+  .tr {
+  }
+  .divDados {
+  }
+  

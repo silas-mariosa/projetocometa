@@ -1,15 +1,18 @@
+// Header.js
 import React, { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import image from "../../img/LOGO_PNG.png";
 import bandeira from "../../img/bandeiraAmericana.png";
 import IconesSocial from "components/IconesSocial/IconesSocial";
-
+import { useLanguage } from "../../LanguageContext";
+import translationsEn from "./en-US.json";
+import translationsPt from "./pt-BR.json";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, toggleLanguage } = useLanguage();
 
   useEffect(() => {
-    // Função para lidar com a rolagem da página
     function handleScroll() {
       if (window.scrollY > 50) {
         setIsScrolled(true);
@@ -18,18 +21,15 @@ export default function Header() {
       }
     }
 
-    // Adiciona um ouvinte de evento para a rolagem da página
     window.addEventListener("scroll", handleScroll);
 
-    // Remove o ouvinte de evento quando o componente é desmontado
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const [isInstitucionalOpen, setIsInstitucionalOpen] = useState(false);
-const [isOperacionalOpen, setIsOperacionalOpen] = useState(false);
-
+  const [isOperacionalOpen, setIsOperacionalOpen] = useState(false);
 
   window.addEventListener("click", (e) => {
     if (!e.target.closest(`.${styles.submenu}`)) {
@@ -37,20 +37,23 @@ const [isOperacionalOpen, setIsOperacionalOpen] = useState(false);
       setIsOperacionalOpen(false);
     }
   });
+
+  const translations = language === "en-US" ? translationsEn : translationsPt;
+
   return (
     <header className={`${styles.Header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.div}>
         <img className={styles.image} src={image} alt="logo Cometa"></img>
         <li className={styles.li}>
           <a className={styles.texto} href="/">
-            HOME
+            {translations.home}
           </a>
           <div className={styles.submenuWrapper}>
             <a
               className={styles.texto}
               onClick={() => setIsInstitucionalOpen(!isInstitucionalOpen)}
             >
-              INSTITUCIONAL
+              {translations.about_us}
             </a>
             <div
               className={`${styles.submenu} ${
@@ -58,16 +61,16 @@ const [isOperacionalOpen, setIsOperacionalOpen] = useState(false);
               }`}
             >
               <a className={styles.submenuItem} href="/sobrenos">
-                Sobre Nós
+                {translations.about_us}
               </a>
               <a className={styles.submenuItem} href="/tripulantes">
-                Nossos Tripulantes
+                {translations.our_crew}
               </a>
               <a className={styles.submenuItem} href="/frota">
-                Nossa Frota
+                {translations.our_fleet}
               </a>
               <a className={styles.submenuItem} href="/expedicoes">
-                Nossas Expedições
+                {translations.our_expeditions}
               </a>
             </div>
           </div>
@@ -76,7 +79,7 @@ const [isOperacionalOpen, setIsOperacionalOpen] = useState(false);
               className={styles.texto}
               onClick={() => setIsOperacionalOpen(!isOperacionalOpen)}
             >
-              OPERACIONAL
+              {translations.operational}
             </a>
             <div
               className={`${styles.submenu} ${
@@ -84,20 +87,16 @@ const [isOperacionalOpen, setIsOperacionalOpen] = useState(false);
               }`}
             >
               <a className={styles.submenuItem} href="/download">
-                Download
+                {translations.download}
               </a>
               <a className={styles.submenuItem} href="/discord">
-                Discord
+                {translations.discord}
               </a>
             </div>
           </div>
-          <a className={styles.texto}>INSCREVA-SE</a>
-          <a className={styles.p_Bandeira}>
-            <img
-              className={styles.bandeira}
-              src={bandeira}
-              alt="Bandeira"
-            ></img>
+          <a className={styles.texto}>{translations.signup}</a>
+          <a className={styles.p_Bandeira} onClick={toggleLanguage}>
+            <img className={styles.bandeira} src={bandeira} alt="Bandeira"></img>
           </a>
         </li>
         <IconesSocial></IconesSocial>
