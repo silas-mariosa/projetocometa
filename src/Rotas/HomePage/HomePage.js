@@ -11,8 +11,29 @@ import BannerBottom from "components/BannerBottom/BannerBottom.js";
 import BannerEstatisticas from "components/BannerEstatisticas/BannerEstatisticas.js";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useLanguage } from "../../LanguageContext";
 
 export default function HomePage() {
+  const { language } = useLanguage();
+
+  // Defina as traduções diretamente no componente
+  const translations = {
+    "en-US": {
+      banner1Text: "Here Your Dreams Soar High",
+      banner2Text: "Realism and Fun",
+      banner3Text: "Come Join Us!",
+      signup: "SING UP!"
+    },
+    "pt-BR": {
+      banner1Text: "Aqui Seus Sonhos Voam Alto",
+      banner2Text: "Realismo e Diversão",
+      banner3Text: "Venha fazer parte!",
+      signup: "INCREVA-SE!"
+    },
+  };
+
+  const currentTranslations = translations[language];
+
   return (
     <section>
       <div>
@@ -23,24 +44,24 @@ export default function HomePage() {
           showArrows={false}
           showThumbs={false}
           easing="ease-in-out"
-          transitionTime={1000}          
+          transitionTime={1000}
           showStatus={false}
         >
           <div className={styles.div}>
-            <p className={styles.p}>Aqui Seus Sonhos Voam Alto</p>
+            <p className={styles.p}>{currentTranslations.banner1Text}</p>
             <img
               src={image}
               alt="cape da fundo"
               className={styles.imagem}
             ></img>
-            <a className={styles.botao}>INSCREVA-SE</a>
+            <a className={styles.botao}>{currentTranslations.signup}</a>
           </div>
           <div>
-            <p className={styles.p1}>Realismo e Diversão</p>
+            <p className={styles.p1}>{currentTranslations.banner2Text}</p>
             <img className={styles.image} alt="banner top" src={image2} />
           </div>
           <div>
-            <p className={styles.p2}>Venha fazer parte!</p>
+            <p className={styles.p2}>{currentTranslations.banner3Text}</p>
             <img className={styles.image} alt="banner top" src={image3} />
           </div>
         </Carousel>
@@ -52,7 +73,7 @@ export default function HomePage() {
         <BannerVoeCometa></BannerVoeCometa>
         <Expedicao></Expedicao>
         <BannerBottom></BannerBottom>
-        <BannerEstatisticas></BannerEstatisticas>        
+        <BannerEstatisticas></BannerEstatisticas>
       </div>
     </section>
   );

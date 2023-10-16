@@ -11,6 +11,7 @@ export default function Rodape() {
   const translations = {
     "en-US": {
       text: `We are a Virtual Airline Company that offers high-level training based on real manuals, completely free, and of course, a lot of fun in flight simulations. Complete fleet for FSX, P3D, XPlane, and MSFS. We are certified on the IVAO and VATSIM networks and also use the POSCON network. Become a Gold Pilot!`,
+      textMission:"Be a VA reference in everything you do. That provides a friendly, cooperative and, above all, welcoming environment.",
       mission: "OUR MISSION",
       vision: "OUR VISION",
       discord: "OUR DISCORD",
@@ -18,6 +19,7 @@ export default function Rodape() {
     },
     "pt-BR": {
       text: `Somos uma Companhia Aérea Virtual que oferece treinamento de alto nível com base em manuais reais, completamente gratuito e, claro, muita diversão em simulações de voo. Frota completa para FSX, P3D, XPlane e MSFS. Somos homologados nas redes IVAO e VATSIM e também utilizamos a rede POSCON. Se torne um Piloto Gold!`,
+      textMission:"Ser uma VA referência em tudo o que faz. Que propicie um ambiente amistoso, cooperativo e sobretudo acolhedor.",
       mission: "NOSSA MISSÃO",
       vision: "NOSSA VISÃO",
       discord: "NOSSO DISCORD",
@@ -42,8 +44,7 @@ export default function Rodape() {
         <div className={styles.divDois}>
           <p className={styles.balao}>{t.mission}</p>
           <p className={styles.texto}>
-            Ser uma VA referência em tudo o que faz. Que propicie um ambiente
-            amistoso, cooperativo e sobretudo acolhedor.
+            {t.textMission}
           </p>
           <p className={styles.balao}>{t.vision}</p>
         </div>
