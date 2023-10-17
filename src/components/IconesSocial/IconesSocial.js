@@ -7,27 +7,27 @@ import youtube from "../../img/youtube.png";
 export default function IconesSocial(){
     return(
         <div className={styles.divSociais}>            
-            <p className={styles.fundoSociais}>
+            <a className={styles.fundoSociais} href={"#"}>
               <img
                 alt="redes sociais"
                 className={styles.imgSociais}
                 src={instagram}
               ></img>
-            </p>
-            <p className={styles.fundoSociais}>
+            </a>
+            <a className={styles.fundoSociais} href={"/download"}>
               <img
                 alt="redes sociais"
                 className={styles.imgSociais}
                 src={googleDrive}
               ></img>
-            </p>
-            <p className={styles.fundoSociais}>
+            </a>
+            <a className={styles.fundoSociais} href={"https://www.youtube.com/@uno3zeromeia"}>
               <img
                 alt="redes sociais"
                 className={styles.imgSociais}
                 src={youtube}
               ></img>
-            </p>
+            </a>
         </div>
     )
 }

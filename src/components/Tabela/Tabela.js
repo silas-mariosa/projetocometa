@@ -52,20 +52,22 @@ export default function Tabela() {
   // Defina as traduções com base no idioma
   const translations = {
     "en-US": {
-      fullName: "Full Name",
+      combinedName: "Full Name",
       roundedHours: "Rounded Flight Hours",
-      callsign: "Callsign",
+      va_user: "Callsign",
       rank: "Rank",
       location: "Location",
       numberOfFlights: "Number of Flights",
+      flights: "fly"
     },
     "pt-BR": {
-      fullName: "Nome Completo",
+      combinedName: "Nome Completo",
       roundedHours: "Horas de Voo Arredondadas",
-      callsign: "Callsign",
+      va_user: "Callsign",
       rank: "Rank",
       location: "Localização",
       numberOfFlights: "Número de Voos",
+      flights: "Voos"
     },
   };
 

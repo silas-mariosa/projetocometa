@@ -1,0 +1,124 @@
+.assinatura {
+    color: #FFF;
+    background-color: #062b52;
+    padding: 2% 25%;
+  }
+  
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .copyrights {
+    flex-grow: 1;
+  }
+  
+  .developerName {
+    color: #F7D400;
+    text-decoration: none;
+  }
+  
+  .privacyLink {
+    flex-grow: 1;
+  }
+  
+  .privacyNoticeLink {
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 1px dashed #FFF;
+  }
+  
+  @media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .assinatura {
+        color: #FFF;
+        background-color: #062b52;
+        padding: 2% 5%;
+      }
+    .flexContainer {
+        display: block;
+        justify-content: center;
+        text-align: center;
+      }
+      .privacyNoticeLink {
+        font-size: 10px;
+        color: #FFF;
+        text-decoration: none;
+        border-bottom: 1px dashed #FFF;
+      }
+      .copyrights {
+        font-size: 10px;
+      }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .assinatura {
+        color: #FFF;
+        background-color: #062b52;
+        padding: 2% 10%;
+      }
+      
+      .flexContainer {
+        display: block;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .copyrights {
+        flex-grow: 1;
+      }
+      
+      .developerName {
+        color: #F7D400;
+        text-decoration: none;
+      }
+      
+      .privacyLink {
+        flex-grow: 1;
+      }
+      
+      .privacyNoticeLink {
+        font-size: 12px;
+        color: #FFF;
+        text-decoration: none;
+        border-bottom: 1px dashed #FFF;
+      }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */
+    .assinatura {
+        color: #FFF;
+        background-color: #062b52;
+        padding: 2% 10%;
+      }
+      
+      .flexContainer {
+        display: block;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .copyrights {
+        flex-grow: 1;
+      }
+      
+      .developerName {
+        color: #F7D400;
+        text-decoration: none;
+      }
+      
+      .privacyLink {
+        flex-grow: 1;
+      }
+      
+      .privacyNoticeLink {
+        font-size: 12px;
+        color: #FFF;
+        text-decoration: none;
+        border-bottom: 1px dashed #FFF;
+      }
+  }

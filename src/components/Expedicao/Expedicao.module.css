@@ -47,3 +47,113 @@
     color:#FFF;
     background-color: #10477F;
 }
+
+@media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .section{
+        padding: 5% 10%;
+        background-color: #F6F1E4;
+        align-items: center;
+        text-align: center;
+    }
+    .containerCards{
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .titulo{
+        text-align: left;
+        color: #10477F;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 1% 0;
+    }    
+    
+    
+    .btn{
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0.375rem 1.5rem;
+        color:#10477F;
+        background-color: #FFF;
+        border: 1px solid #10477F;
+        text-decoration: none;
+    }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .section{
+        padding: 5% 10%;
+        background-color: #F6F1E4;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .titulo{
+        text-align: left;
+        color: #10477F;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0 0 1% 0;
+    }    
+    
+    
+    .btn{
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 0.375rem 1.5rem;
+        color:#10477F;
+        background-color: #FFF;
+        border: 1px solid #10477F;
+        text-decoration: none;
+    }
+    
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */      
+    .section{
+        padding: 5% 10%;
+        background-color: #F6F1E4;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .titulo{
+        text-align: left;
+        color: #10477F;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 0 0 1% 0;
+    }
+    
+    
+    .containerBtn{
+        text-align: right;
+        margin-right: 2%;
+    }
+    
+    .btn{
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 0.375rem 1.5rem;
+        color:#10477F;
+        background-color: #FFF;
+        border: 1px solid #10477F;
+        text-decoration: none;
+    }
+    
+    .btn:hover{
+        transition: 0.5s;
+        color:#FFF;
+        background-color: #10477F;
+    }
+  }

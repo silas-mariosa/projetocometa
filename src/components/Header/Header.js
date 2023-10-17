@@ -99,7 +99,9 @@ export default function Header() {
             <img className={styles.bandeira} src={bandeira} alt="Bandeira"></img>
           </a>
         </li>
-        <IconesSocial></IconesSocial>
+        <div className={styles.Social}>
+          <IconesSocial></IconesSocial>
+        </div>
       </div>
     </header>
   );

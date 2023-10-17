@@ -17,3 +17,44 @@
     text-align: center;
     bottom: 3%; 
 }
+
+@media (max-width: 767px) {
+    /* Estilos para telas pequenas */    
+    .titulo {
+        position: absolute;
+        margin: 0;
+        color: #F7D400;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        bottom: 3%; 
+    }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */    
+    .titulo {
+        position: absolute;
+        margin: 0;
+        color: #F7D400;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        bottom: 3%; 
+    }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */
+    .titulo {
+        position: absolute;
+        margin: 0;
+        color: #F7D400;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        bottom: 3%; 
+    }
+  }

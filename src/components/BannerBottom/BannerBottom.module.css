@@ -35,3 +35,104 @@
   .numero{
     margin: .5% 0;
   }
+
+  @media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .textoUpper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to make text more readable */
+      color: white; /* Text color */
+    }
+    
+    .texto{
+      font-size: 6px;
+      line-height: 1.4;
+      padding: 0;
+    }
+    .nome{
+      margin: 0;
+      font-size: 6px;
+    }
+    .numero{
+      margin: 0;
+      font-size: 6px;
+    }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .textoUpper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to make text more readable */
+      color: white; /* Text color */
+    }
+    
+    .texto{
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 0 5%;
+    }
+    .nome{
+      margin: 0;
+      font-size: 12px;
+    }
+    .numero{
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */    
+    .textoUpper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to make text more readable */
+      color: white; /* Text color */
+    }
+    
+    .texto{
+      font-size: 16px;
+      line-height: 1.4;
+      padding: 0 5%;
+    }
+    .nome{
+      margin: 0;
+      font-size: 14px;
+    }
+    .numero{
+      margin: 0;
+      font-size: 14px;
+    }
+  }

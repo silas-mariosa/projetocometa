@@ -52,8 +52,8 @@ export default function Rodape() {
           <p className={styles.balao}>{t.discord}</p>
           <iframe
             src="https://discord.com/widget?id=941487557500342312&theme=dark"
-            width="350"
-            height="350"
+            width="250"
+            height="60"
             allowTransparency="true"
             frameBorder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"

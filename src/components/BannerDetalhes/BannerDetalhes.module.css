@@ -14,3 +14,65 @@
     background-color: #F6F1E4;
     padding: 3% 18%;
 }
+
+@media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .div{
+    display: flex;
+    flex-basis: 25%;
+    padding: 0 4%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerPai{
+    background-color: #F6F1E4;
+    padding: 3% 18%;
+}
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .div{
+    display: flex;
+    flex-basis: 25%;
+    padding: 0 4%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerPai{
+    background-color: #F6F1E4;
+    padding: 3% 18%;
+}
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */
+    .div{
+    display: flex;
+    flex-basis: 25%;
+    padding: 0 4%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerPai{
+    background-color: #F6F1E4;
+    padding: 3% 18%;
+}
+  }

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./BannerVoeCometa.module.css"
 import { useLanguage } from "../../LanguageContext"; // Certifique-se de importar o contexto de idioma
 
 export default function BannerVoeCometa() {
@@ -18,10 +19,10 @@ export default function BannerVoeCometa() {
   const t = translations[language];
 
   return (
-    <div style={{ backgroundColor: "#10477F", display: "flex" }}>
-      <div style={{ padding: "2% 0 4% 20%" }}>
-        <p style={{ fontSize: "60px", color: "#FFF", margin: "0" }}>{t.text}</p>
-        <hr style={{ maxWidth: "100%" }}></hr>
+    <div className={styles.class1}>
+      <div className={styles.class2}>
+        <p className={styles.p}>{t.text}</p>
+        <hr className={styles.hr}></hr>
       </div>
     </div>
   );

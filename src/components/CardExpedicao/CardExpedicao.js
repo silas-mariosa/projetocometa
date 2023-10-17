@@ -1,12 +1,12 @@
-import styles from './CardExpedicao.module.css'
+import styles from "./CardExpedicao.module.css";
 
-export default function CardExpedicao({image, titulo}){
-    return(
-        <>
-        <div className={styles.div} style={{display: 'block', textAlign: 'center', padding:'1%', cursor: 'pointer'}}>
-            <img src={image} alt={titulo} style={{border:'1px solid #10477F' }}></img>
-            <p style={{fontSize:'20', color:'#10477F', fontWeight: '500'}}>{titulo}</p>
-        </div>
-        </>
-    )
+export default function CardExpedicao({ image, titulo }) {
+  return (
+    <>
+      <div className={styles.div}>
+        <img src={image} alt={titulo} className={styles.imagem} />
+        <p className={styles.titulo}>{titulo}</p>
+      </div>
+    </>
+  );
 }

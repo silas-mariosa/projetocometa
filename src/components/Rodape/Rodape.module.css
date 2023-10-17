@@ -39,3 +39,143 @@
   text-align: left;
   padding: 0 3%;
 }
+
+@media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .rodape{
+        background-color: #10477F;
+        padding: 3% 10% 2% 10%;
+    }
+    
+    .container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .logo{
+        max-width: 40%;
+    }
+    
+    .texto{
+        color: #FFF;
+        font-size: 10px;
+    }
+    .siga{
+        color: #FFF;
+        font-size: 10px;
+    }
+    
+    .balao{
+        font-size: 10px;
+        color: #fff;
+        border: 2px solid #F7D400;
+        padding: 0.250em 1.8em;
+        border-radius: 25px;
+    }
+    
+    .divUm,
+    .divDois,
+    .divTres {
+      flex-basis: 33.33%; /* Dividir igualmente em 3 partes */
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 3%;
+    }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .rodape{
+        background-color: #10477F;
+        padding: 3% 10% 2% 10%;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .logo{
+        max-width: 40%;
+    }
+    
+    .texto{
+        color: #FFF;
+        font-size: 16px;
+    }
+    .siga{
+        color: #FFF;
+        font-size: 14px;
+    }
+    
+    .balao{
+        font-size: 16px;
+        color: #fff;
+        border: 2px solid #F7D400;
+        padding: 0.250em 1.8em;
+        border-radius: 25px;
+    }
+    
+    .divUm,
+    .divDois,
+    .divTres {
+      flex-basis: 33.33%; /* Dividir igualmente em 3 partes */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      padding: 0 3%;
+    }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */
+    .rodape{
+        background-color: #10477F;
+        padding: 3% 10% 2% 10%;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .logo{
+        max-width: 40%;
+    }
+    
+    .texto{
+        color: #FFF;
+        font-size: 18px;
+    }
+    .siga{
+        color: #FFF;
+        font-size: 18px;
+    }
+    
+    .balao{
+        font-size: 20px;
+        color: #fff;
+        border: 2px solid #F7D400;
+        padding: 0.250em 1.8em;
+        border-radius: 25px;
+    }
+    
+    .divUm,
+    .divDois,
+    .divTres {
+      flex-basis: 33.33%; /* Dividir igualmente em 3 partes */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      padding: 0 3%;
+    }
+  }

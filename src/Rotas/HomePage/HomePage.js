@@ -39,7 +39,7 @@ export default function HomePage() {
       <div>
         <Carousel
           autoPlay={true}
-          interval={8000}
+          interval={5000}
           infiniteLoop={true}
           showArrows={false}
           showThumbs={false}

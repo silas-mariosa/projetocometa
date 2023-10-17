@@ -40,3 +40,116 @@
     border: 4px solid #10477F;
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .p{
+        position: absolute;
+        bottom: 25%;
+        left: 12%;
+        font-size: 16px;
+        color: #F7D400;
+    }
+    .p1{
+        position: absolute;
+        bottom: 20%;
+        right: 12%;
+        font-size: 16px;
+        color: #F7D400;
+    }
+    .p2{
+        position: absolute;
+        top: 20%;
+        right: 12%;
+        font-size: 16px;
+        color: #F7D400;
+    }
+    .botao{
+        position: absolute;
+        right: 20%;
+        bottom: 20%;
+        color: #10477F;
+        background-color: #fff;
+        padding: .250rem 1.0rem;
+        border-radius: 30px;
+        font-size: 14px;
+        border: 4px solid #10477F;
+        cursor: pointer;
+    }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .p{
+        position: absolute;
+        bottom: 25%;
+        left: 12%;
+        font-size: 24px;
+        color: #F7D400;
+    }
+    .p1{
+        position: absolute;
+        bottom: 20%;
+        right: 12%;
+        font-size: 24px;
+        color: #F7D400;
+    }
+    .p2{
+        position: absolute;
+        top: 20%;
+        right: 12%;
+        font-size: 24px;
+        color: #F7D400;
+    }
+    .botao{
+        position: absolute;
+        right: 20%;
+        bottom: 20%;
+        color: #10477F;
+        background-color: #fff;
+        padding: .5rem 1.5rem;
+        border-radius: 30px;
+        font-size: 14px;
+        border: 4px solid #10477F;
+        cursor: pointer;
+    }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */
+    .p{
+        position: absolute;
+        bottom: 25%;
+        left: 12%;
+        font-size: 28px;
+        color: #F7D400;
+    }
+    .p1{
+        position: absolute;
+        bottom: 20%;
+        right: 12%;
+        font-size: 28px;
+        color: #F7D400;
+    }
+    .p2{
+        position: absolute;
+        top: 20%;
+        right: 12%;
+        font-size: 28px;
+        color: #F7D400;
+    }
+    .botao{
+        position: absolute;
+        right: 20%;
+        bottom: 20%;
+        color: #10477F;
+        background-color: #fff;
+        padding: .5rem 1.5rem;
+        border-radius: 30px;
+        font-size: 18px;
+        border: 4px solid #10477F;
+        cursor: pointer;
+    }
+  }

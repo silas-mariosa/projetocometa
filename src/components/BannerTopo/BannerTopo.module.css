@@ -37,3 +37,117 @@
     margin: 0 30%;
     padding: 0.8rem 1rem;
 }
+
+@media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .section{
+        background-color: #F6F1E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .icone{
+        max-width: 10%;
+    }
+    
+    .p{
+        font-size: 20px;
+        margin: 0.700rem;
+        color: #10477F;
+    }
+    
+    .image{
+        max-width: 50%;
+        padding-bottom: 0.5rem;
+    }
+    
+    .botao{
+        font-size: 14px;
+        color: #FFF;
+    }
+    
+    .containerBotao{        
+        margin: 0 35%;
+        padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .section{
+        background-color: #F6F1E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    .icone{
+        max-width: 10%;
+    }
+    
+    .p{
+        font-size: 28px;
+        margin: 0.700rem;
+        color: #10477F;
+    }
+    
+    .image{
+        max-width: 50%;
+        padding-bottom: 0.5rem;
+    }
+    
+    .botao{
+        font-size: 18px;
+        color: #FFF;
+    }
+    
+    .containerBotao{        
+        margin: 0 35%;
+        padding: 0.8rem 0.8rem;
+    }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */
+    .section{
+        background-color: #F6F1E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    .p{
+        font-size: 32px;
+        margin: 0.700rem;
+        color: #10477F;
+    }
+    
+    .image{
+        max-width: 60%;
+        padding-bottom: 0.5rem;
+    }
+    
+    .botao{
+        font-size: 18px;
+        color: #FFF;
+    }
+    
+    .containerBotao{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: #10477F;
+        margin: 0 35%;
+        padding: 0.6rem 1rem;
+    }
+  }

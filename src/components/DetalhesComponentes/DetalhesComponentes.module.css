@@ -1,4 +1,51 @@
-.descricao{
-    font-size: 14px;
+.descricao {
+  font-size: 14px;
+  text-align: center;
+}
+.tituloTexto {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  /* Estilos para telas pequenas */
+  .descricao {
+    font-size: 8px;
     text-align: center;
+  }
+  .tituloTexto {
+    font-size: 14px;
+  }
+  .icone{
+    width: 40px;
+  }
+}
+
+/* Tablets e telas médias */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets e telas médias */
+  .descricao {
+    font-size: 12px;
+    text-align: center;
+  }
+  .tituloTexto {
+    font-size: 20px;
+  }
+  .icone{
+    width: 75px;
+  }
+}
+
+/* Desktops e telas grandes */
+@media (min-width: 1024px) and (max-width: 1919px) {
+  /* Estilos para desktops e telas grandes */
+  .descricao {
+    font-size: 12px;
+    text-align: center;
+  }
+  .tituloTexto {
+    font-size: 24px;
+  }
+  .icone{
+    width: 100px;
+  }
 }

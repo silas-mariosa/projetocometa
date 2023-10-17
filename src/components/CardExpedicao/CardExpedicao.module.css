@@ -1,3 +1,73 @@
 .div:hover{
     opacity: 0.7;
 }
+/* SeuComponente.module.css */
+.div {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .imagem {
+    border: 1px solid #10477F;
+  }
+  
+  .titulo {
+    font-size: 20px; /* Adicione "px" para especificar a unidade de font-size */
+    color: #10477F;
+    font-weight: 500;
+  }
+
+  @media (max-width: 767px) {
+    /* Estilos para telas pequenas */
+    .imagem {
+        width: 45%;
+        border: 1px solid #10477F;
+      }
+      
+      .titulo {
+        margin: 0;
+        font-size: 14px; /* Adicione "px" para especificar a unidade de font-size */
+        color: #10477F;
+        font-weight: 500;
+      }
+  }
+  
+  /* Tablets e telas médias */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets e telas médias */
+    .imagem {
+        width: 70%;
+        border: 1px solid #10477F;
+      }
+      
+      .titulo {
+        margin: 0;
+        font-size: 18px; /* Adicione "px" para especificar a unidade de font-size */
+        color: #10477F;
+        font-weight: 500;
+      }
+  }
+  
+  /* Desktops e telas grandes */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    /* Estilos para desktops e telas grandes */      
+    .div {
+        display: block;
+        text-align: center;
+        padding: 1%;
+        cursor: pointer;
+      }
+      .imagem {
+        width: 90%;
+        border: 1px solid #10477F;
+      }
+      
+      .titulo {
+        margin: 0;
+        font-size: 20px; /* Adicione "px" para especificar a unidade de font-size */
+        color: #10477F;
+        font-weight: 500;
+      }
+  }
