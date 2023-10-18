@@ -2,56 +2,49 @@
     "frota":[
         {
             "id":1,
-            "image": "/image/expedicaoCard.png",
+            "image": "/image/a320neodef.png",
             "titulo": "Airbus (A319/A320/A321)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":2,
-            "image": "/image/expedicaoCard.png",
+            "image": "/image/a330neo.png",
             "titulo": "Airbus (A330-900)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":3,
-            "image": "/image/expedicaoCard.png",
+            "image": "/image/atr72600.png",
             "titulo": "ATR-72 (AT75)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":4,
-            "image": "/image/expedicaoCard.png",
+            "image": "/image/b737800.png",
             "titulo": "Boeing 736-300/800/900 (B736)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":5,
-            "image": "/image/expedicaoCard.png",
+            "image": "/image/b737800.png",
             "titulo": "Boeing 738-300/800/900 (B738)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
             "id":6,
-            "image": "/image/expedicaoCard.png",
-            "titulo": "Embraer 190 (E190)",
-            "tipo": "Comercial",
-            "asa": "Asa Fixa"
-        },
-        {
-            "id":7,
-            "image": "/image/expedicaoCard.png",
+            "image": "/image/granc280.png",
             "titulo": "Cessna 208 Grand Caravam",
             "tipo": "Comercial",
             "asa": "Asa Fixa"
         },
         {
-            "id":8,
-            "image": "/image/expedicaoCard.png",
+            "id":7,
+            "image": "/image/cessnacj4.png",
             "titulo": "Cessna Citation CJ4 (C25C)",
             "tipo": "Comercial",
             "asa": "Asa Fixa"

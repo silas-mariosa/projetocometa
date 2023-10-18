@@ -28,3 +28,18 @@
     margin: 0;
     font-size: 14px;
 }
+
+.image{
+    height: 250px;
+}
+
+@media (max-width: 767px) {
+    .image{
+        height: 125px;
+    }    
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .image{
+        height: 150px;
+    }   
+}

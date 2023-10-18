@@ -142,34 +142,6 @@
     },
     {
       "id": "6",
-      "image": "/image/A320.png",
-      "translations": {
-        "en-US": {
-          "nome": "Embraer E190",
-          "Velocidade": "Mach 0.82 (approximately 882 km/h)",
-          "Teto": "41,000 ft",
-          "Alcance": "2,450 nautical miles (approximately 4,540 km)",
-          "Combustivel": "approximately 9,190 liters",
-          "NumeroPassageiros": "Varies from 94 to 114 passengers, depending on configuration",
-          "PesoMaximo": "106,250 pounds (approximately 48,250 kg)",
-          "PesoPouso": "97,000 pounds (approximately 43,998 kg)",
-          "PesoDecolagem": "106,250 pounds (approximately 48,250 kg)"
-        },
-        "pt-BR": {
-          "nome": "Embraer E190",
-          "Velocidade": "Mach 0,82 (cerca de 882 km/h)",
-          "Teto": "41.000 pés",
-          "Alcance": "2.450 milhas náuticas (cerca de 4.540 km)",
-          "Combustivel": "aproximadamente 9.190 litros",
-          "NumeroPassageiros": "Varia de 94 a 114 passageiros, dependendo da configuração",
-          "PesoMaximo": "106.250 libras (aproximadamente 48.250 kg)",
-          "PesoPouso": "97.000 libras (aproximadamente 43.998 kg)",
-          "PesoDecolagem": "106.250 libras (aproximadamente 48.250 kg)"
-        }
-      }
-    },
-    {
-      "id": "7",
       "image": "/image/GranCaravanC2008.png",
       "translations": {
         "en-US": {
@@ -197,7 +169,7 @@
       }
     },
     {
-      "id": "8",
+      "id": "7",
       "image": "/image/c25c.png",
       "translations": {
         "en-US": {

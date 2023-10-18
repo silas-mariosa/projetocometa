@@ -21,6 +21,7 @@ export default function CardFrota({ id, src, aeronave, tipo, asa }) {
               src={src}
               alt={aeronave}
               style={{ border: "1px solid #10477F" }}
+              className={styles.image}
             ></img>
           </div>
         </Link>
