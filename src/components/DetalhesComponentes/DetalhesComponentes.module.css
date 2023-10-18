@@ -16,7 +16,7 @@
     font-size: 14px;
   }
   .icone{
-    width: 40px;
+    height:  40px;
   }
 }
 
@@ -31,7 +31,7 @@
     font-size: 20px;
   }
   .icone{
-    width: 75px;
+    height: 75px;
   }
 }
 
@@ -46,6 +46,6 @@
     font-size: 24px;
   }
   .icone{
-    width: 100px;
+    height: 100px;
   }
 }

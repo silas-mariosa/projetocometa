@@ -29,7 +29,7 @@ export default function BannerTopo() {
         <img className={styles.image} alt="banner top" src={foto}></img>
         <div className={styles.containerBotao}>
           <img className={styles.icone} src={icone}></img>
-          <a className={styles.botao}>{t.buttonText}</a>
+          <a className={styles.botao} href="/cadastrar">{t.buttonText}</a>
         </div>
       </div>
     </section>

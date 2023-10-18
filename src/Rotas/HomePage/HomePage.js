@@ -54,7 +54,7 @@ export default function HomePage() {
               alt="cape da fundo"
               className={styles.imagem}
             ></img>
-            <a className={styles.botao}>{currentTranslations.signup}</a>
+            <a className={styles.botao} href="/cadastrar">{currentTranslations.signup}</a>
           </div>
           <div>
             <p className={styles.p1}>{currentTranslations.banner2Text}</p>

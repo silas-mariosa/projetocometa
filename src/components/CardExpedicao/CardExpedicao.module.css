@@ -7,6 +7,7 @@
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
+    padding: 1%;
   }
   
   .imagem {
@@ -37,6 +38,9 @@
   /* Tablets e telas médias */
   @media (min-width: 768px) and (max-width: 1023px) {
     /* Estilos para tablets e telas médias */
+    .div {
+      padding: 1%;
+    }
     .imagem {
         width: 70%;
         border: 1px solid #10477F;

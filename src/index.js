@@ -16,6 +16,7 @@ import NossaExpedicao from "rotas/NossaExpedicao/NossaExpedicao";
 import { LanguageProvider } from "./LanguageContext.js";
 import Lgpd from "rotas/LGPD/Lgpd";
 import PaginaNaoEncontrada from "components/PaginaNaoEncontrada/PaginaNaoEncontrada";
+import SingUp from "rotas/SingUp/SingUp";
 
 const GlobalStyled = createGlobalStyle`
   body {
@@ -54,6 +55,7 @@ root.render(
           <Route path="/download" element={<DownloadPage />} />
           <Route path="/lgpd" element={<Lgpd/>}/>
           <Route path="/*" element={<PaginaNaoEncontrada/>}/>
+          <Route path="/cadastrar" element={<SingUp/>}/>
         </Routes>
         <Rodape />
         <Assinatura />

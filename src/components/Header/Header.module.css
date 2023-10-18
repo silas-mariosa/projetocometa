@@ -115,47 +115,12 @@ transition: .2s;
 .submenuWrapper:hover .submenu {
   display: block;
 }
+.divHamb{
+  display: none;
+}
 
 @media (max-width: 767px) {
-  .texto {
-    color: #fff;
-    margin-right: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 10px;
+  .divHamb{
+    display: block;
   }
-}
-
-/* Tablets e telas médias */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tablets e telas médias */
-  .texto {
-    color: #fff;
-    margin-right: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-  }
-}
-
-/* Desktops e telas grandes */
-@media (min-width: 1024px) and (max-width: 1919px) {
-  
-  
-  .div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  
-  
-  .image {
-    max-width: 10%;
-    transition: opacity 0.3s ease;
-    padding: 0.5%;
-  }
-  
 }

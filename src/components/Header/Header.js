@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <header className={`${styles.Header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.div}>
-        <img className={styles.image} src={image} alt="logo Cometa"></img>
+        <img className={styles.image} src={image} alt="logo Cometa" ></img>
         <li className={styles.li}>
           <a className={styles.texto} href="/">
             {translations.home}
@@ -94,7 +94,7 @@ export default function Header() {
               </a>
             </div>
           </div>
-          <a className={styles.texto}>{translations.signup}</a>
+          <a className={styles.texto} href="/cadastrar">{translations.signup}</a>
           <a className={styles.p_Bandeira} onClick={toggleLanguage}>
             <img className={styles.bandeira} src={bandeira} alt="Bandeira"></img>
           </a>
