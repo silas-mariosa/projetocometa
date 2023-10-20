@@ -10,8 +10,7 @@ import translationsPt from "./pt-BR.json";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, toggleLanguage } = useLanguage();  
 
   useEffect(() => {
     function handleScroll() {

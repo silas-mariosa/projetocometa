@@ -27,7 +27,7 @@ export default function Assinatura() {
           {t.copyrights}{" "}
           <a
             href="http://silasmariosa.com.br"
-            target="_blank"
+            alt="site criador"
             className={styles.developerName}
           >
             {t.developer_name}
