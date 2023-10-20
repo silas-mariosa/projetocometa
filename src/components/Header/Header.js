@@ -45,9 +45,9 @@ export default function Header() {
   return (
     <header className={`${styles.Header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.div}>
-        <img className={styles.image} src={image} alt="logo Cometa" ></img>
+        <img className={styles.image} src={image} alt="logo_Cometa" ></img>
         <li className={styles.li}>
-          <a className={styles.texto} href="/">
+          <a className={styles.texto} alt="a_btn" href="/">
             {translations.home}
           </a>
           <div className={styles.submenuWrapper}>
@@ -62,16 +62,16 @@ export default function Header() {
                 isInstitucionalOpen ? styles.open : ""
               }`}
             >
-              <a className={styles.submenuItem} href="/sobrenos">
+              <a className={styles.submenuItem} alt="a_btn" href="/sobrenos">
                 {translations.about_us}
               </a>
-              <a className={styles.submenuItem} href="/tripulantes">
+              <a className={styles.submenuItem} alt="a_btn" href="/tripulantes">
                 {translations.our_crew}
               </a>
-              <a className={styles.submenuItem} href="/frota">
+              <a className={styles.submenuItem} alt="a_btn" href="/frota">
                 {translations.our_fleet}
               </a>
-              <a className={styles.submenuItem} href="/expedicoes">
+              <a className={styles.submenuItem} alt="a_btn" href="/expedicoes">
                 {translations.our_expeditions}
               </a>
             </div>
@@ -88,16 +88,16 @@ export default function Header() {
                 isOperacionalOpen ? styles.open : ""
               }`}
             >
-              <a className={styles.submenuItem} href="/download">
+              <a className={styles.submenuItem} alt="a_btn" href="/download">
                 {translations.download}
               </a>
-              <a className={styles.submenuItem} href="/discord">
+              <a className={styles.submenuItem} alt="a_btn" href="/discord">
                 {translations.discord}
               </a>
             </div>
           </div>
-          <a className={styles.texto} href="/cadastrar">{translations.signup}</a>
-          <a className={styles.p_Bandeira} onClick={toggleLanguage}>
+adastra          <a className={styles.texto} href="/cr" alt="cadastrar">{translations.signup}</a>
+          <a className={styles.p_Bandeira} onClick={toggleLanguage} alt="btnLingua">
             <img className={styles.bandeira} src={bandeira} alt="Bandeira"></img>
           </a>
         </li>
@@ -116,28 +116,28 @@ export default function Header() {
           <nav
           className={`${styles.mobileMenu} ${isHamburgerMenuOpen ? styles.open : ""}`}
         >
-            <a className={styles.texto} href="/">
+            <a className={styles.texto} alt="a_btn" href="/">
               {translations.home}
             </a>
-            <a className={styles.texto} href="/sobrenos">
+            <a className={styles.texto} alt="a_btn" href="/sobrenos">
               {translations.about_us}
             </a>
-            <a className={styles.texto} href="/tripulantes">
+            <a className={styles.texto} alt="a_btn" href="/tripulantes">
               {translations.our_crew}
             </a>
-            <a className={styles.texto} href="/frota">
+            <a className={styles.texto} alt="a_btn" href="/frota">
               {translations.our_fleet}
             </a>
-            <a className={styles.texto} href="/expedicoes">
+            <a className={styles.texto} alt="a_btn" href="/expedicoes">
               {translations.our_expeditions}
             </a>
-            <a className={styles.texto} href="/download">
+            <a className={styles.texto} alt="a_btn" href="/download">
               {translations.download}
             </a>
-            <a className={styles.texto} href="/discord">
+            <a className={styles.texto} alt="a_btn" href="/discord">
               {translations.discord}
             </a>
-            <a className={styles.texto} href="/cadastrar">
+            <a className={styles.texto} alt="a_btn" href="/cadastrar">
               {translations.signup}
             </a>
           </nav>

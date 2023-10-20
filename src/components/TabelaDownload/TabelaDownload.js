@@ -50,7 +50,7 @@ export default function TabelaDownload() {
                     <div className={styles.divDados}>
                       <strong className={styles.strong}>{t.link}</strong>
                     </div>
-                    <a href={dados.link} className={styles.a} style={{ textDecoration: 'none', color: '#000' }}>Acessar...</a>
+                    <a alt="acessar" href={dados.link} className={styles.a} style={{ textDecoration: 'none', color: '#000' }}>Acessar...</a>
                   </td>
                 </tr>
               ))}

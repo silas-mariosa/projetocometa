@@ -37,7 +37,7 @@ export default function Expedicao() {
         </div>
       </div>
       <div className={styles.containerBtn}>
-        <a className={styles.btn} href="/expedicoes">
+        <a className={styles.btn} href="/expedicoes" alt="expedicoes">
           {t.buttonLabel}
         </a>
       </div>
