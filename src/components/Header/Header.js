@@ -11,6 +11,7 @@ import translationsPt from "./pt-BR.json";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const { language, toggleLanguage } = useLanguage();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -37,6 +38,7 @@ export default function Header() {
       setIsOperacionalOpen(false);
     }
   });
+  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
 
   const translations = language === "en-US" ? translationsEn : translationsPt;
 
@@ -102,6 +104,44 @@ export default function Header() {
         <div className={styles.Social}>
           <IconesSocial></IconesSocial>
         </div>
+      </div>
+      <div className={styles.divHamburguer}>
+      <button
+          className={styles.hamburgerButton}
+          onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+        >
+          ☰ {/* Ícone de hambúrguer */}
+        </button>
+        {isHamburgerMenuOpen && (
+          <nav
+          className={`${styles.mobileMenu} ${isHamburgerMenuOpen ? styles.open : ""}`}
+        >
+            <a className={styles.texto} href="/">
+              {translations.home}
+            </a>
+            <a className={styles.texto} href="/sobrenos">
+              {translations.about_us}
+            </a>
+            <a className={styles.texto} href="/tripulantes">
+              {translations.our_crew}
+            </a>
+            <a className={styles.texto} href="/frota">
+              {translations.our_fleet}
+            </a>
+            <a className={styles.texto} href="/expedicoes">
+              {translations.our_expeditions}
+            </a>
+            <a className={styles.texto} href="/download">
+              {translations.download}
+            </a>
+            <a className={styles.texto} href="/discord">
+              {translations.discord}
+            </a>
+            <a className={styles.texto} href="/cadastrar">
+              {translations.signup}
+            </a>
+          </nav>
+        )}
       </div>
     </header>
   );

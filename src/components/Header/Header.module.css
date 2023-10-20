@@ -115,12 +115,71 @@ transition: .2s;
 .submenuWrapper:hover .submenu {
   display: block;
 }
-.divHamb{
+.divHamburguer{
   display: none;
-}
-
-@media (max-width: 767px) {
-  .divHamb{
+  
+}@media (max-width: 767px) {
+  .divHamburguer{
     display: block;
   }
+  .div{
+    display: none;
+  }
+  .texto{
+    font-size: 12px;
+    padding: 0;
+  }
+  
+/* Estilo para o botão hambúrguer */
+.hamburgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  padding: 10px;
+  transition: color 0.3s;
+  color: #F7D400;
+}
+.hamburgerButton::after {
+  background: #10477f;
+  color: #F7D400;
+}
+
+/* Estilo para o menu móvel (inicialmente oculto) */
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #10477f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+/* Classe para animar a abertura do menu */
+.open {
+  display: block;
+  transform: scaleY(1);
+  transform-origin: top;
+  opacity: 1;
+  
+}
+
+/* Estilo dos links no menu móvel */
+.mobileMenu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+/* Efeito de cor no hover dos links do menu móvel */
+.mobileMenu a:hover {
+  color: #f7d400;
+}
+
+
 }
