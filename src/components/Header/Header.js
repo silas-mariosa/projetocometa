@@ -95,7 +95,7 @@ export default function Header() {
               </a>
             </div>
           </div>
-adastra          <a className={styles.texto} href="/cr" alt="cadastrar">{translations.signup}</a>
+         <a className={styles.texto} href="/cr" alt="cadastrar">{translations.signup}</a>
           <a className={styles.p_Bandeira} onClick={toggleLanguage} alt="btnLingua">
             <img className={styles.bandeira} src={bandeira} alt="Bandeira"></img>
           </a>
