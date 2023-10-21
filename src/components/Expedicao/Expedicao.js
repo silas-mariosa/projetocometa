@@ -2,7 +2,8 @@ import React from "react";
 import { useLanguage } from "../../LanguageContext"; // Certifique-se de importar o contexto de idioma
 import CardExpedicao from "components/CardExpedicao/CardExpedicao";
 import styles from "./Expedicao.module.css";
-import card1 from "../../img/expedicaoCard.png";
+import expedicoes from "./expedicoes.json"
+import { Link } from "react-router-dom";
 
 export default function Expedicao() {
   const { language } = useLanguage(); // Obtém o idioma atual do contexto
@@ -30,10 +31,12 @@ export default function Expedicao() {
           <hr className={styles.line}></hr>
         </div>
         <div className={styles.containerCards}>
-          {/* Aqui você pode mapear os dados das expedições e criar os componentes CardExpedicao com base nos dados */}
-          {Array(6).fill().map((_, index) => (
-            <CardExpedicao key={index} image={card1} titulo={t.buttonLabel} />
-          ))}
+          
+          {expedicoes.rotas.map(response => 
+          <Link to={`/expedicoes/${response.id}`}>
+            <CardExpedicao key={response.id} image={response.imagem} />
+          </Link>
+          )}
         </div>
       </div>
       <div className={styles.containerBtn}>

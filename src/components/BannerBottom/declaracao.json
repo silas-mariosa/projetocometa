@@ -1,0 +1,49 @@
+{
+  "depoimentos": [
+    {
+      "id": "1",
+      "translation": {
+        "en-US": {
+          "feedback": "In search of aviation videos on the internet, I found COMETA. After registering and an interview, I became an Aspirant, and after studying with COMETA's wonderful, easy, and free material, I became a Virtual Pilot. Thank you, COMETA AIRLINES!",
+          "name": "Silas M.",
+          "memberID": "ACT1992"
+        },
+        "pt-BR": {
+          "feedback": "Em busca de vídeos de aviação na internet, encontrei a COMETA. Após o registro e uma entrevista, tornei-me um Aspirante e, após estudar com o material maravilhoso, fácil e gratuito da COMETA, tornei-me um Piloto Virtual. Obrigado, COMETA AIRLINES!",
+          "name": "Silas M.",
+          "memberID": "ACT1992"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "translation": {
+        "en-US": {
+          "feedback": "I've been in virtual aviation for many years, and I joined Aviação Cometa in its early days. Today, I am grateful to be part of this team and to have fun with friends. I am proud to hold the position of Vice President of the VA, and today, this is my second family.",
+          "name": "Paganelli, Jefferson",
+          "memberID": "ACT3818"
+        },
+        "pt-BR": {
+          "feedback": "Já estou muitos anos na aviação virtual, entrei na Aviação Cometa nos primórdios da mesma.Hoje sou grato por fazer parte desta equipe e poder me divertir junto aos amigos, com muito prazer que carrego o cargo de Vice Presidente da VA e hoje esta é minha segunda família.",
+          "name": "Paganelli, Jefferson",
+          "memberID": "ACT3818"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "translation": {
+        "en-US": {
+          "feedback": "Today, I feel comfortable taking my flights without being charged for it. I used to take flights with other VAs, but here at Cometa, it's different. It's a serious airline with good collaborators. Thank you, Aviação Cometa.",
+          "name": "Gleidson D.",
+          "memberID": "ACT1000"
+        },
+        "pt-BR": {
+          "feedback": "Hoje me cinto a vontade em fazer meus vôos sem ser cobrado por isso ,já realizava vôos em outras va mas aqui na cometa e diferente uma companhia aéria seria com bons colaboradores.obrigado Aviação cometa",
+          "name": "Gleidson D.",
+          "memberID": "ACT1000"
+        }
+      }
+    }
+  ]
+}

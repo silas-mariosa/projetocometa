@@ -12,6 +12,9 @@
   
   .imagem {
     border: 1px solid #10477F;
+    max-height: 200px;
+  max-width: 100%;
+  height: auto;
   }
   
   .titulo {

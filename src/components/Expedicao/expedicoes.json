@@ -1,0 +1,34 @@
+{
+    "rotas": [
+        {
+            "id": "1",
+            "imagem" : "/image/madagascar.jpeg",
+            "titulo": "Madagascar"
+        },
+        {
+            "id": "2",
+            "imagem" : "/image/china.jpeg",
+            "titulo": "Muralha da China"
+        },
+        {
+            "id": "3",
+            "imagem" : "/image/egito.jpeg",
+            "titulo": "Pirâmides do Egito"
+        },
+        {
+            "id": "4",
+            "imagem" : "/image/alaska.jpeg",
+            "titulo": "Alaska"
+        },
+        {
+            "id": "5",
+            "imagem" : "/image/apocalipse.jpeg",
+            "titulo": "Apocalipse"
+        },
+        {
+            "id": "6",
+            "imagem" : "/image/cargo.jpeg",
+            "titulo": "Cargo"
+        }
+    ]
+}

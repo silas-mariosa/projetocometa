@@ -13,10 +13,6 @@ export default function FrotaDetalhes() {
   const id = partesDaURL[partesDaURL.length - 1];
   const aeronaveEncontrada = Aeronaves.frota.find((item) => item.id === id);
 
-  console.log("ID da aeronave:", id);
-  console.log("Aeronave encontrada:", aeronaveEncontrada);
-  console.log("lingua selecionada:", language.language);
-
   if (aeronaveEncontrada) {
     const aeronaveData = aeronaveEncontrada.translations[language.language];
 

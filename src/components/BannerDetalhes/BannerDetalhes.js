@@ -38,7 +38,7 @@ export default function BannerDetalhes() {
         "Para atender todas as necessidades. Conheça todas as aeronaves da nossa frota!",
       title4: "NOSSAS EXPEDIÇÕES",
       description4:
-        "Diversão garantida em Tours Nacionais e Internacionais. Conheça as Tours da Cometa Airlines!",
+        "Diversão garantida em Tours Nacionais e Internacionais. Conheça as Expedições da Cometa Airlines!",
     },
   };
 

@@ -51,7 +51,7 @@ root.render(
           <Route path="/tripulantes" element={<NossaTripulacao />} />
           <Route path="/frota" element={<Frota />} />
           <Route path="/frota/:id" element={<FrotaDetalhes />} />
-          <Route path="/expedicoes" element={<NossaExpedicao />} />
+          <Route path="/expedicoes/:id" element={<NossaExpedicao />} />
           <Route path="/download" element={<DownloadPage />} />
           <Route path="/lgpd" element={<Lgpd/>}/>
           <Route path="/*" element={<PaginaNaoEncontrada/>}/>
