@@ -16,7 +16,7 @@ export default function SobreNos() {
       pageTitle: "About Us",
       bannerTitle: "FLY COMETA!",
       bannerTextOne:
-        "Gold Virtual Airlines is a Virtual Airline company dedicated to the simulation of commercial flights using software and online computer networks.",
+        "In mid-April 2022, the company COVI Linhas Aéreas (Virtual Commanders) began its activities in the field of Virtual Airline in flight simulators. As soon as the services began, it achieved widespread success in publicity and collaborators. At the beginning of 2023, the company suffered some changes and had its activities suspended until further notice. Until, on June 1st, the company returns to action with a new look and a new name; So that's when Cometa Aviation came into being. Today, we can say that Cometa is like a family, it is in full activity and expanding. We have God as our guide and friendship as the principle of everything. Therefore, we invite all commanders who have flight simulators as a hobby and who want to be part of this family. Everyone here is welcome. Go Comet!.",
       bannerTextTwo:
         "Passion for Performance and Big Dream is the feeling that has moved us since June 2012 and that makes the eyes shine and fills the hearts of our members and followers with pride. That's why today we are among the Virtual Airlines with the greatest respect and credibility in virtual aviation in Latin America.",
       missionTitle: "Did You Know?",
@@ -32,7 +32,7 @@ export default function SobreNos() {
       pageTitle: "Sobre nós",
       bannerTitle: "VOE COMETA!",
       bannerTextOne:
-        "A Gold Virtual Airlines é uma empresa Aérea Virtual dedicada à simulação de voos comerciais utilizando Software’s e redes mundiais de computadores on line.",
+        "Em meados do mês de abril de 2022, a empresa COVI Linhas Aéreas (Comandantes Virtuais) dava início às suas atividades no ramo de Companhia Aérea Virtual em simuladores de vôos. Assim que iniciou os serviços, alcançou amplo sucesso na divulgação e colaboradores. Ao iniciar o ano de 2023, a empresa sofreu com algumas mudanças e teve suas atividades paralisadas até segunda ordem. Até que, em 1° de junho, a empresa volta à ativa com uma nova roupagem e um novo nome; então foi aí que surgiu a Aviação Cometa. Hoje, podemos dizer que a Cometa é como uma família,  está em plena atividade e em plena expansão. Temos Deus nosso guia e a amizade como o princípio de tudo. E por isso, convidamos a todos os comandantes que têm o simulador de vôo como um hobby e que queiram fazer parte desta família. Todos aqui são bem-vindos. Vai Cometa!.",
       bannerTextTwo:
         "Paixão pela Performance e Sonho Grande é o sentimento que nos move desde junho de 2012 e que faz brilhar os olhos e encher o coração de orgulho de nossos membros e seguidores. Também é por isso que hoje estamos entre as Virtuais Airlines com maior respeito e credibilidade na aviação virtual da América Latina.",
       missionTitle: "Você sabia?",
