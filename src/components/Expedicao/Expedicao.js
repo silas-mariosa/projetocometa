@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguage } from "../../LanguageContext"; // Certifique-se de importar o contexto de idioma
 import CardExpedicao from "components/CardExpedicao/CardExpedicao";
 import styles from "./Expedicao.module.css";
-import expedicoes from "./expedicoes.json"
+import expedicoes from "./expedicoes.json";
 import { Link } from "react-router-dom";
 
 export default function Expedicao() {
@@ -28,15 +28,14 @@ export default function Expedicao() {
       <div className={styles.containerExpedicao}>
         <div className={styles.divExpedicao}>
           <p className={styles.titulo}>{t.title}</p>
-          <hr className={styles.line}></hr>
         </div>
+        <hr className={styles.line}></hr>
         <div className={styles.containerCards}>
-          
-          {expedicoes.rotas.map(response => 
-          <Link to={`/expedicoes/${response.id}`}>
-            <CardExpedicao key={response.id} image={response.imagem} />
-          </Link>
-          )}
+          {expedicoes.rotas.map((response) => (
+            <Link to={`/expedicoes/${response.id}`}>
+              <CardExpedicao key={response.id} image={response.imagem} />
+            </Link>
+          ))}
         </div>
       </div>
       <div className={styles.containerBtn}>

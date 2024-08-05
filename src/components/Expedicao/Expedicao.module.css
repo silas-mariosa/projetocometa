@@ -12,6 +12,10 @@
     align-items: center;
     text-align: center;
 }
+.divExpedicao{
+    display: flex;
+    justify-content: center;
+}
 
 .titulo{
     text-align: left;

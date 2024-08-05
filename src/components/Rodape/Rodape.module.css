@@ -120,6 +120,10 @@
         padding: 0.250em 1.8em;
         border-radius: 25px;
     }
+    .iconesSocialDiv{
+        display: flex;
+        justify-content: center;
+    }
     
     .divUm,
     .divDois,

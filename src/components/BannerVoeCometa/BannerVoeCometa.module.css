@@ -1,11 +1,12 @@
 .class1{
     background-Color: #10477F;
     display: flex;
+    justify-content: center;
     margin: 0;
 }
 
 .class2{
-    padding: 2% 0 4% 20%
+    padding: 2% 0 4% 0
 }
 
 .p{

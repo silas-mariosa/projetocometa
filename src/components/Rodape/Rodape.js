@@ -39,7 +39,9 @@ export default function Rodape() {
           </div>
           <p className={styles.texto}>{t.text}</p>
           <p className={styles.siga}>{t.followUs}</p>
+          <div className={styles.iconesSocialDiv}>
           <IconesSocial></IconesSocial>
+          </div>
         </div>
         <div className={styles.divDois}>
           <p className={styles.balao}>{t.mission}</p>
@@ -55,7 +57,6 @@ export default function Rodape() {
             width="250"
             height="60"
             allowTransparency="true"
-            frameBorder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
             title="Discord Widget"
           ></iframe>

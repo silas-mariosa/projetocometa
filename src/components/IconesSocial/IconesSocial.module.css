@@ -11,7 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     margin-right: 2rem;
 }
 
@@ -20,6 +19,9 @@
     .imgSociais{
         max-width: 15px;
     }
+    .divSociais{
+    margin-right: 0;
+}
   }
   
   /* Tablets e telas médias */
@@ -28,6 +30,9 @@
     .imgSociais{
         max-width: 20px;
     }
+    .divSociais{
+    margin-right: 0;
+}
   }
   
   /* Desktops e telas grandes */
@@ -36,4 +41,7 @@
     .imgSociais{
         max-width: 28px;
     }
+    .divSociais{
+    margin-right: 0;
+}
   }
